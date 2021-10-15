@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
    <head>
       <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Mohit Yadav</title>
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
@@ -9,7 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
    </head>
    <body>
-      <input type="checkbox" id="active">
+      <div class="section1">
+    
+      <div class="cover">
+        
+         <input type="checkbox" id="active">
       <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
       <div class="wrapper">
          <ul>
@@ -20,16 +25,14 @@
             <li><a href="#">Courses</a></li>
          </ul>
       </div>
-      <div class="cover">
-        
-        <h1 id="heading"></h1>
       <h1 id="name">Mohit yadav</h1>
-      <h2 class="i-am">I'm</h2>
-      <h3 id="me" class="animate"></h3>
+      <h2 id="me">I'm a <span class="i-am"></span></h2>
+     
+      </div>
       </div>
    </body>
    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-   <script>  var typed = new Typed('.animate', {
+   <script>  var typed = new Typed('.i-am', {
     strings: [
       "Developer.",
       "Student.",

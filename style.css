@@ -6,15 +6,9 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-#heading{
-  text-align: center;
-  font-family: 'Ephesis', cursive;
-  font-size: 60px;
-  font-weight: bolder;
-}
 #name{
   position:absolute;
-  top:35%;
+  top:43%;
   left:50%;
   transform:translate(-50%,-50%);
   width:100%;
@@ -26,9 +20,9 @@
   font-size: 60px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
-.i-am{
+#me{
   position:absolute;
-  top:46%;
+  top:55%;
   left:50%;
   transform:translate(-50%,-50%);
   width:100%;
@@ -40,28 +34,19 @@
   font-size: 40px;
   text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
-#me{
-  position:absolute;
-  top:55%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  width:100%;
-  text-align:center;
-  margin:0;
-  padding: 0;
-  font-family: 'Ephesis', cursive;
-  color:orange;
-  font-size: 40px;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+.section1{
+  height: fit-content;
 }
 .cover{
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
-  background: url("https://unsplash.com/photos/zFOm6KzA-7g/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM0Mjc4NzUw&force=true");
-  background-repeat: no-repeat;
+  background-image: url("https://unsplash.com/photos/zFOm6KzA-7g/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM0MzAxMDA2&force=true&w=1920");
+  -webkit-background-size:cover;
   background-size: cover;
-  background-position-y:bottom;
-  background-position-x: center;
+  background-position: center bottom;
+
   height: 100vh;
 }
 .wrapper{
@@ -85,12 +70,12 @@
   right: 20px;
   /* left: 20px; */
   top: 20px;
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
   text-align: center;
-  line-height: 50px;
-  border-radius: 50%;
-  font-size: 20px;
+  line-height: 70px;
+  border-radius: 20%;
+  font-size: 40px;
   color: #fff;
   cursor: pointer;
   background: linear-gradient(-135deg, #c850c0, #4158d0);
@@ -102,10 +87,14 @@
   color: #4158d0;
   
 }
-#active:checked ~ .cover{
+#active:checked ~ #me{
  display: none;
   
 }
+#active:checked ~ #name{
+  display: none;
+   
+ }
 #active:checked ~ .menu-btn i:before{
   content: "\f00d";
 }
