@@ -146,7 +146,7 @@ input[type="checkbox"]{
   }
   #name{
     position:absolute;
-    top:68%;
+    top:72%;
     left:50%;
     transform:translate(-50%,-50%);
     width:100%;
@@ -160,7 +160,7 @@ input[type="checkbox"]{
   }
   #me{
     position:absolute;
-    top:80%;
+    top:83%;
     left:50%;
     transform:translate(-50%,-50%);
     width:100%;
