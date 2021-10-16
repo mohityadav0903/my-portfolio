@@ -159,10 +159,57 @@ input[type="checkbox"]{
     margin:0;
     padding: 0;
     font-family: 'Akronim', cursive;
-    color: rgb(243, 16, 16);
+    color: white;
     font-size: 70px;
-    text-shadow: 0 2px 1px red;
-  }
+    font-weight: 400;
+  
+  /* display: inline-block;
+  margin: 0;
+  outline: none;
+  vertical-align: middle; */
+    
+  text-shadow:
+        0 3px 20px red,
+        0 0 20px red,
+    0 0 10px rgb(228, 33, 43),
+    4px -5px 6px red,
+    -4px -10px 10px red,
+    0 -10px 50px red;
+  animation: 2s Blazing infinite alternate linear;
+}
+
+@keyframes Blazing {
+  0%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+    0 0 10px orange,
+    0 0 0 yellow,
+    0 0 5px yellow,
+    -2px -5px 5px yellow,
+    4px -10px 10px yellow; }
+  25%   { text-shadow: 0 3px 20px red, 0 0 30px red,
+    0 0 20px orange,
+    0 0 5px yellow,
+    -2px -5px 5px yellow,
+    3px -10px 10px yellow,
+    -4px -15px 20px yellow; }
+  50%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+    0 -5px 10px orange,
+    -2px -5px 5px yellow,
+    3px -10px 10px yellow,
+    -4px -15px 20px yellow,
+    2px -20px 30px rgba(255,255,0,0.5); }
+  75%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+    0 -5px 10px orange,
+    3px -5px 5px yellow,
+    -4px -10px 10px yellow,
+    2px -20px 30px rgba(255,255,0,0.5),
+    0px -25px 40px rgba(255,255,0,0)}
+  100%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+    0 0 10px orange,
+    0 0 0 yellow,
+    0 0 5px yellow,
+    -2px -5px 5px yellow,
+    4px -10px 10px yellow; }
+}
   #me{
     position:absolute;
     top:89%;
@@ -231,3 +278,24 @@ input[type="checkbox"]{
     transition: all 0.3s ease-in-out;
   }
 }
+/* .skill-section{
+  background-image: url("https://unsplash.com/photos/Xy-k9wm8Mf8/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM0MzcyMDMy&force=true&w=1920");
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.skill-item{
+  align-self: center;
+  border: 5px solid white;
+  border-radius: 25%;
+}
+.c{
+  background-repeat: no-repeat;
+  height: 300px;
+  width: 250px;
+} */
