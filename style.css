@@ -174,7 +174,7 @@ input[type="checkbox"]{
     0 0 10px rgb(228, 33, 43),
     4px -5px 6px red,
     -4px -10px 10px red,
-    0 -10px 50px red;
+    0 -10px 40px red;
   animation: 2s Blazing infinite alternate linear;
 }
 
