@@ -57,13 +57,13 @@
   /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
   /* clip-path: circle(25px at calc(0% + 45px) 45px); */
   clip-path: circle(25px at calc(100% - 45px) 45px);
-  transition: all 0.3s ease-in-out;
+  transition: all 0s ease-in-out;
 }
 #active:checked ~ .wrapper{
   clip-path: circle(75%);
 }
 .menu-btn{
-  position: absolute;
+  position: fixed;
   z-index: 2;
   right: 20px;
   /* left: 20px; */
@@ -259,9 +259,11 @@ input[type="checkbox"]{
     z-index: -1;
     transition: transform 0.3s ease;
   }
+  .myskills{
+    font-size: 40px;
+  }
   .menu-btn{
-    position: absolute;
-    z-index: 2;
+    position: fixed;
     right: 20px;
     /* left: 20px; */
     top: 20px;
@@ -278,24 +280,72 @@ input[type="checkbox"]{
     transition: all 0.3s ease-in-out;
   }
 }
-/* .skill-section{
-  background-image: url("https://unsplash.com/photos/Xy-k9wm8Mf8/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM0MzcyMDMy&force=true&w=1920");
+.img-fluid{
+  height: 270px;
+  width: max-content;
+  box-shadow: 0 0 50px rgb(22, 16, 16);
+  border-radius: 20%;
+  margin: 30px;
+}
+.section2{
+ width: fit-content;
+ display: flex;
+flex-wrap: wrap;
+flex-direction: row;
+justify-content: space-around;
+}
+.myskills
+{
+  color:black;
+    font-family: 'Akronim', cursive;
+    margin:40px;
+    font-size: 100px;
+  text-align: center;
+  /* display: inline-block;
   margin: 0;
-  padding: 0;
-  height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  outline: none;
+  vertical-align: middle; */
+    
+  text-shadow:
+        0 3px 20px red,
+        0 0 20px red,
+    0 0 10px rgb(228, 33, 43),
+    4px -5px 6px red,
+    -4px -10px 10px red,
+    0 -10px 40px red;
+  animation: 2s Blazing infinite alternate linear;
 }
-.skill-item{
-  align-self: center;
-  border: 5px solid white;
-  border-radius: 25%;
+
+@keyframes Blazing {
+  0%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+    0 0 10px orange,
+    0 0 0 yellow,
+    0 0 5px yellow,
+    -2px -5px 5px yellow,
+    4px -10px 10px yellow; }
+  25%   { text-shadow: 0 3px 20px red, 0 0 30px red,
+    0 0 20px orange,
+    0 0 5px yellow,
+    -2px -5px 5px yellow,
+    3px -10px 10px yellow,
+    -4px -15px 20px yellow; }
+  50%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+    0 -5px 10px orange,
+    -2px -5px 5px yellow,
+    3px -10px 10px yellow,
+    -4px -15px 20px yellow,
+    2px -20px 30px rgba(255,255,0,0.5); }
+  75%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+    0 -5px 10px orange,
+    3px -5px 5px yellow,
+    -4px -10px 10px yellow,
+    2px -20px 30px rgba(255,255,0,0.5),
+    0px -25px 40px rgba(255,255,0,0)}
+  100%   { text-shadow: 0 3px 20px red, 0 0 20px red,
+    0 0 10px orange,
+    0 0 0 yellow,
+    0 0 5px yellow,
+    -2px -5px 5px yellow,
+    4px -10px 10px yellow; }
+
 }
-.c{
-  background-repeat: no-repeat;
-  height: 300px;
-  width: 250px;
-} */
