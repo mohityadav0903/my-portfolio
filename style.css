@@ -346,7 +346,7 @@ justify-content: space-around;
     4px -10px 10px yellow; }
 
 }
-@media (max-width:350px)
+@media (max-width:400px)
 {
   .img-fluid{
     height: 270px;
