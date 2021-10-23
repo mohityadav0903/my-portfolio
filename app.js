@@ -37,11 +37,6 @@ const db= getDatabase(app);
     // // Show alert
      alert('Thanks for Submittiing');
   
-    // // Hide alert after 3 seconds
-     setTimeout(function(){
-      document.querySelector('.alert').style.display = 'none';
-     },3000);
-  
     // Clear form
     document.getElementById('contactform').reset();
   }
