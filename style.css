@@ -8,6 +8,18 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
+.contact-icon{
+  background-image: url("https://flyclipart.com/thumb2/phone-png-transparent-phone-images-398425.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 65px;
+  border-radius: 50%;
+  width: 65px;
+  position: fixed;
+  top: 80%;
+  left: 93%;
+}
 #name{
   position:absolute;
   top:46%;
@@ -39,7 +51,7 @@
 .section1{
   height: fit-content;margin: 0;
   padding: 0;
-  background-image: url("https://unsplash.com/photos/zFOm6KzA-7g/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM0MzAxMDA2&force=true&w=1920");
+  background-image: url("img/jessy-smith-zFOm6KzA-7g-unsplash.jpg");
   -webkit-background-size:cover;
   background-size: cover;
   background-position: center bottom;
@@ -141,14 +153,27 @@
 input[type="checkbox"]{
   display: none;
 }
+@media (max-width:1000px){
+  .section3{
+    height: 150vh;
+  }
+  .contact-icon{
+    left: 85%;
+  }
+}
 @media (max-width:600px) {
   .section1{
-    background-image: url("https://unsplash.com/photos/U0tBTn8UR8I/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8OXx8aGFja2VyfHwwfHx8fDE2MzQzNDIwMzM&force=true&w=1920");
+    background-image: url("img/altumcode-U0tBTn8UR8I-unsplash.jpg");
     -webkit-background-size:cover;
   background-size: cover;
   background-position: center center;
 
   height: 100vh;
+  }
+  .contact-icon{
+    top: 5%;
+    left:10%;
+    height: 40px;width: 40px;
   }
   #name{
     position:absolute;
@@ -361,7 +386,7 @@ justify-content: space-around;
   }
 }
 .section3{
-  background-image: url("https://unsplash.com/photos/PGdW_bHDbpI/download?ixid=MnwxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjM0ODEzNzI0&force=true&w=1920");
+  background-image: url("img/fakurian-design-PGdW_bHDbpI-unsplash.jpg");
   background-repeat: no-repeat;
   background-size:cover ;
   background-position: center center;
@@ -489,11 +514,7 @@ padding: 20px;
   margin: 10px;
 }
 }
-@media (max-width:1000px){
-  .section3{
-    height: 150vh;
-  }
-}
+
 
 
 
