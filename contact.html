@@ -11,15 +11,24 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
 </head>
-<body>
+<body onload="preload()">
+   <div id="loading">
+      <p>l</p>
+      <p>o</p>
+      <p>a</p>
+      <p>d</p>
+      <p>i</p>
+      <p>n</p>
+      <p>g</p>
+    </div>
     <div class="section3">
     <input type="checkbox" id="active">
     <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
     <div class="wrapper">
        <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Projects</a></li>
           <li><a href="contact.html">Contact</a></li>
           <li><a href="skills.html">skills</a></li>
        </ul>
@@ -41,7 +50,8 @@
      <a href="https://github.com/mohityadav0903" target="_blank">  <img src="https://th.bing.com/th/id/OIP.YyOMn9wj8tZCEyCPTYGlegHaHa?w=167&h=180&c=7&r=0&o=5&dpr=1.25&pid=1.7" alt=""class="social-link"></a>
  <a href="https://discord.com/channels/@Mohit Yadav#7713" target="_blank"> <img class="social-link" src="https://www.bing.com/th?id=OIP.5RQ-0-JN-xB1dR-LTU3RdQHaHa&w=134&h=134&c=8&rs=1&qlt=90&o=6&dpr=1.25&pid=3.1&rm=2" alt=""></a>
  
-    </div>
+    </div> 
     <script type="module" src="app.js"></script>
+  <script src="preloader.js"></script>
 </body>
 </html>
